@@ -1,5 +1,5 @@
 var inquirer = require('inquirer');
-var item = require('./item')
+var item = require('./item');
 
 var uncaught = require('uncaught');
 uncaught.start();
@@ -37,7 +37,7 @@ function uno() {
 			message: 'POST AN ITEM or BID ON AN ITEM?'
 		}
 	]).then(function(response) {
-		if ( response.style == 'POST AN ITEM' )
+		if ( response.style === 'POST AN ITEM' )
 			post();
 		else bid();
 	});
