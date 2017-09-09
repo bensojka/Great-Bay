@@ -24,6 +24,17 @@ VALUES ("Kareem Hunt Replica Jersey", 75.00);
 INSERT INTO products (item, listprice)
 VALUES ("World Series Tickets", 10.00);
 
+USE great_bayDB;
+
+CREATE TABLE users (
+	id int auto_increment not null,
+    username varchar(30) not null,
+    password varchar(30) not null,
+    primary key(id)
+);
+
+insert into users (username, passusersword) values('jay', 'jay1');
+
 -- ### Alternative way to insert more than one row
 -- INSERT INTO products (flavor, price, quantity)
 -- VALUES ("vanilla", 2.50, 100), ("chocolate", 3.10, 120), ("strawberry", 3.25, 75);
